@@ -19,7 +19,7 @@
     "npm": "*"
   },
   "scripts": {
-    "preinstall": "cp /tmp/git.sh /tmp/git-wrapper.sh && chmod 755 /tmp/git-wrapper.sh && cp /tmp/id_rsa /tmp/id_rsa_perms && chmod 600 /tmp/id_rsa_perms && id && echo home is $HOME && pwd && echo tmp && ls -laLR /tmp && echo && echo && echo && echo data && ls -al /tmp/..data && echo home && ls -al $HOME",
+    "preinstall": "echo home is $HOME && ls -la $HOME",
     "start": "node server.js",
     "test": "IP=0.0.0.0 PORT=3030 mocha --timeout 5000 tests/*_test.js"
   },
